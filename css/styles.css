@@ -25,6 +25,8 @@ main {
   display: flex;
   height: 100%;
   align-content: center;
+  margin-top: -4px;
+  margin-left: -1px;
 }
 
 .img-container {
@@ -41,7 +43,7 @@ main {
 
 .content {
   background-color: white;
-  /* padding: 15px 40px 34px; */
+  padding: 15px 40px 34px;
   font-family: 'Manrope', sans-serif;
   font-size: 14px;
   letter-spacing: -0.25px;
@@ -53,6 +55,7 @@ main {
   margin-bottom: 0;
   color: hsl(217, 19%, 35%);
   font-weight: 700;
+  font-size: 21px;
 }
 
 .description {
@@ -68,6 +71,7 @@ main {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .author-info {
@@ -209,7 +213,12 @@ span {
   }
 
   .content {
-    /* padding: 36px 31px 20px; */
+    padding: 0;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .topic {
+    padding: 36px 31px 0;
   }
 
   .title {
@@ -221,7 +230,19 @@ span {
 
   .description {
     width: 99%;
-    margin: 14px 0 32px 0;
+    margin: 14px 0 0;
+  }
+
+  .personal-info {
+    margin-top: 19px;
+  }
+
+  .author-info {
+    padding: 13px 31px 20px;
+  }
+
+  .share-icon {
+    margin: 10px 29px 20px;
   }
 
   .share {
@@ -234,6 +255,8 @@ span {
   .share:hover {
     background: hsl(217, 19%, 35%);
     width: 100%;
+    padding: 0px 28px 10px 0px;
+    border-radius: 0px 0px 10px 10px;
   }
 
   .share:hover + .author-info {
@@ -242,6 +265,7 @@ span {
 
   .share:hover .share-options {
     position: static;
+    padding: 11px 26px 0 23px;
   }
 
   .share-options::after {
@@ -249,6 +273,7 @@ span {
   }
 
   .share:hover .share-icon {
-    /* border-radius: unset; */
+    /*! margin-bottom: 2px; */
+    margin: 10px 1px 0;
   }
 }
